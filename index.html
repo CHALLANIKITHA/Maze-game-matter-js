@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+    <style>
+      body{
+        margin:0px;
+      }
+      .winner{
+        font-size:36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        position: absolute;
+        z-index: 1;
+        width:100vw;
+        height: 100vh;
+      }
+      .container{
+        display: flex;
+        width:100%;
+        justify-content: space-between;
+        align-items: center;
+        height:50px;
+        color:red;
+      }
+      /* form{
+         float:right;
+         margin-top:10px;
+      }
+     */
+     .win{
+       color:white;
+       font-size: 40px;
+     }
+     h1{
+       color:red;
+       font-size:40px;
+       text-shadow: 1px 1px black;
+     }
+      .hidden{
+        display: none !important;
+      }
+      button{
+        background-color:lightcoral;
+        color:white;
+        height:40px;
+        border:2px solid black;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="winner hidden">
+        <h1 class="win">You win!</h1>
+      </div>
+      <div class="container">
+        <div>
+          <div></div>
+          <!-- <p>Directions: <span>W:top &nbsp;S:down &nbsp;D:right &nbsp;A:left</span></p> -->
+        </div>
+        <div>
+          <h1>Maze game</h1>
+        </div>
+        <div>
+          <!-- <form>
+            Enter the Direction
+            <input type="text">
+          </form> -->
+          <button id="top">top</button>
+          <button id="bottom">bottom</button>
+          <button id="left">left</button>
+          <button id="right">right</button>
+        </div>
+      </div>
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
